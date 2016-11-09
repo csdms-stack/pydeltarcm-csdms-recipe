@@ -6,7 +6,7 @@ os.mkdir('_testing')
 os.chdir('_testing')
 
 
-from pymt.components import FrostNumberModel as Model
+from pymt.components import PyDeltaRCM as Model
 
 
 model = Model()
