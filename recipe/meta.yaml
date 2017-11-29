@@ -14,12 +14,14 @@ source:
 
 requirements:
   build:
-    - bmi-babel
+    - babelizer
     - pydeltarcm
+    - scipy <=0.18.1
   run:
-    - bmi-babel
+    - babelizer
     - pydeltarcm
-
+    - scipy <=0.18.1
+    - matplotlib
 test:
   requires:
     - pymt
