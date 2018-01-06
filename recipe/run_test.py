@@ -4,7 +4,7 @@ import os
 
 os.mkdir('_testing')
 os.chdir('_testing')
-
+os.environ['MPLBACKEND'] = 'Agg'
 
 from pymt.components import PyDeltaRCM as Model
 
