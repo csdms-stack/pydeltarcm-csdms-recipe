@@ -17,7 +17,8 @@ requirements:
     - babelizer
     - pydeltarcm
   run:
-    - cca-tools
+    - cca-babel <2
+    - cca-spec-babel
     - pydeltarcm
 
 test:
