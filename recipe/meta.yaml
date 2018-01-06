@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
 
 source:
   git_url: https://github.com/mperignon/pyDeltaRCM_WMT
@@ -16,12 +16,11 @@ requirements:
   build:
     - babelizer
     - pydeltarcm
-    - scipy <=0.18.1
   run:
-    - babelizer
+    - cca-babel <2
+    - cca-spec-babel
     - pydeltarcm
-    - scipy <=0.18.1
-    - matplotlib
+
 test:
   requires:
     - pymt
@@ -29,5 +28,7 @@ test:
 about:
   home: http://csdms.colorado.edu/wiki/Model:PyDeltaRCM
   license: MIT
-  summary: Parcel-based cellular flux routing and sediment transport model for the formation of river deltas
+  summary:
+    Parcel-based cellular flux routing and sediment transport model
+    for the formation of river deltas
   dev_url: https://github.com/mperignon/pyDeltaRCM_WMT
